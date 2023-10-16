@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+
+    <!-- FUENTE DE ÌCONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="banner">
+            <img src="img/banner.jpg" alt="">
+        </div>
+        <h1 class="tittle">Nuevos productos</h1>
+
+        <!--iPhone 15-->
+        <div class="product-grid">
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="img/iPhone15.png" alt="">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">iPhone 15 128GB</p>
+                    <p class="product-grid__price">$4,599,999</p>
+                    <a href="#" class="product-grid__btn btn-default">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="img/iPhone15Pro.png" alt="">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">iPhone 15 Pro 128GB</p>
+                    <p class="product-grid__price">$5,999,999</p>
+                    <a href="#" class="product-grid__btn btn-default">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="img/iPhone15ProMax.png" alt="">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">iPhone 15 Pro Max 256GB</p>
+                    <p class="product-grid__price">$6,999,999</p>
+                    <a href="#" class="product-grid__btn btn-default">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <!--iPhone 14-->
+        <div class="product-grid">
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="img/iPhone_14_128GB.png" alt="">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">iPhone 14 128GB</p>
+                    <p class="product-grid__price">$3,599,999</p>
+                    <a href="#" class="product-grid__btn btn-default">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="img/iPhone_14_Pro_Max_256GB.jpg" alt="">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">iPhone 14 Pro Max 256GB</p>
+                    <p class="product-grid__price">$5,399,999</p>
+                    <a href="#" class="product-grid__btn btn-default">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="img/iPhone_14_Pro_Max_128GB.png" alt="">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">iPhone 14 Pro Max 128GB</p>
+                    <p class="product-grid__price">$5,150,000</p>
+                    <a href="#" class="product-grid__btn btn-default">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="img/iPhone_14_Pro_256GB.webp" alt="">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">iPhone 14 Pro 256GB</p>
+                    <p class="product-grid__price">$4,999,999</p>
+                    <a href="#" class="product-grid__btn btn-default">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="img/iPhone_14_Pro_128GB.webp" alt="">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">iPhone 14 Pro 128GB</p>
+                    <p class="product-grid__price">$4,599,999</p>
+                    <a href="#" class="product-grid__btn btn-default">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <!--iPhone 13-->
+        <div class="product-grid">
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="img/iPhone_13_128GB.png" alt="">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">iPhone 13 128GB</p>
+                    <p class="product-grid__price">$3,199,999</p>
+                    <a href="#" class="product-grid__btn btn-default">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-grid__item">
+                <div class="product-grid__imagen">
+                    <img src="img/iPhone_13_256GB.png" alt="">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">iPhone 13 256GB</p>
+                    <p class="product-grid__price">$4,350,000</p>
+                    <a href="#" class="product-grid__btn btn-default">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <!--MODAL CARRITO DE COMPRAS-->
+        <div class="modal" id="jsModalCarrito">
+            <div class="modal__container">
+                <button type="button" class="modal__close fa-solid fa-xmark jsModalClose"></button>
+                <div class="modal__info">
+                    <div class="modal__header">
+                        <h2>Carrito</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
