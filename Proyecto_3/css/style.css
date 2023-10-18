@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(20, 20, 20);
+}
+
+.reloj {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Proyecto_3/img/reloj_analogo.png");
+    background-size: cover;
+    border: 1rem solid #191f50;
+    border-radius: 50vh;
+    box-shadow: inset 0px 0px 20px 5px rgb(100, 138, 206); /*1er parámetro crea sombra del eje x del plano cartesiano hrzntl. 2do parámetro marca el eje respecto al eje vertical. 3er Maneja la difuminación de la sombra. 4to Pone la sombra de forma pareja en toda la circunferencia*/
+}
+
+.reloj::before { /*La clase before ayuda a crear contenido interno*/
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #1100ff;
+    border-radius: 50vh;
+    z-index: 10000; /*Indica el orden de un elemento posicionado y sus descendientes*/
+}
+
+.hora {
+    width: 140px;
+    height: 140px;
+}
+
+.minuto {
+    width: 220px;
+    height: 220px;
+}
+
+.segundo {
+    width: 250px;
+    height: 250px;
+}
+
+.hora::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 90px;
+    background: #5B9BFA;
+    z-index: 10;
+    border-radius: 50vh;
+}
+
+.minuto::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 130px;
+    background: #2350e6;
+    z-index: 11;
+    border-radius: 50vh;
+}
+
+.segundo::before {
+    content: '';
+    position: absolute;
+    width: 1.8px;
+    height: 150px;
+    background: #6285e4;
+    z-index: 12;
+    border-radius: 50vh;
+}
+
+.hora, .minuto, .segundo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50vh;
+}
