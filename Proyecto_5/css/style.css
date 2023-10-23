@@ -1,0 +1,47 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+.esqueletoOff { /*Contenedor donde va a estar mi imagen y va a estar quiera*/
+    width: 550px;
+    height: 600px;
+    background-color: rgb(124, 0, 225);
+    border-radius: 1vh;
+    border: 0.2rem solid rgba(180, 138, 214, 0.932);
+    display: flex;
+    align-items: end; /*Alinea de forma vertical de forma vertical*/
+    justify-content: center;
+    background-image: url("../img/esqueletoBailando_0.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.esqueletoOnOff {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(48, 19, 71);
+    border-radius: 1vh;
+    border: 0.2rem solid rgba(100, 77, 121, 0.932);
+    position: fixed;
+    color: rgb(32, 150, 85);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+
+.esqueletoOff.on { /*La clase .on es la que se va agregar a esqueletoQuieto y se intercambia por la otra*/
+    background-image: url("../img/esqueletoBailando.gif");
+    background-position-y: -40px;
+    
+}
