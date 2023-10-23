@@ -31,6 +31,18 @@ body {
     /*1er parámetro crea sombra del eje x del plano cartesiano hrzntl. 2do parámetro marca el eje respecto al eje vertical. 3er Maneja la difuminación de la sombra. 4to Pone la sombra de forma pareja en toda la circunferencia*/
 }
 
+
+.reloj1 {
+    border: 0.3rem solid #fff;/*Borde del tamaño de 1rem*/
+    margin-top: -190px;
+    display: flex;/*Flex para que se ajuste*/
+    border-radius: 1vh;/*El borde al 50% que hace que se vuelva el cuadrado un círculo*/
+    font-family: monospace;/*Hace que se de un poco más de separación entre los número*/
+    font-size: 1.5rem;
+    transition-duration: 1s;
+    color: rgb(17, 216, 173);
+}
+
 .reloj:hover {
     background-color: #ffffff00;
     /* Color de fondo al pasar el ratón */
@@ -38,16 +50,14 @@ body {
     color: rgb(9, 255, 0);
 }
 
-.reloj::before {
-    /*La clase before ayuda a crear contenido interno*/
+.reloj::before {/*La clase before ayuda a crear contenido interno*/
     content: '';
     position: absolute;
     width: 20px;
     height: 20px;
     background: #1100ff;
     border-radius: 50vh;
-    z-index: 10000;
-    /*Indica el orden de un elemento posicionado y sus descendientes*/
+    z-index: 10000;    /*Indica el orden de un elemento posicionado y sus descendientes*/
 }
 
 .hora {
@@ -63,6 +73,11 @@ body {
 .segundo {
     width: 250px;
     height: 250px;
+}
+
+.botton{
+    margin-top: -180px;
+    margin-left: 90px;
 }
 
 .hora::before {
@@ -109,38 +124,15 @@ body {
 
 body {
     margin: 0;
-    min-height: 100vh;
-    /*Ajuste de 100% de la altura de la pantalla*/
+    min-height: 100vh;    /*Ajuste de 100% de la altura de la pantalla*/
     display: grid;
     /*Se justifica de una forma más sencilla*/
-    justify-content: center;
-    /*Ajuste de contenido vertical al centro*/
-    align-items: center;
-    /*Ajuste de contenido horizontal al centro*/
-    background-color: rgb(26, 34, 32);
-    /*Color de fondo*/
+    justify-content: center;    /*Ajuste de contenido vertical al centro*/
+    align-items: center;/*Ajuste de contenido horizontal al centro*/
+    background-color: rgb(26, 34, 32);    /*Color de fondo*/
 }
 
-.reloj1 {
-    border: 0.3rem solid #070b27;
-    /*Borde del tamaño de 1rem*/
-    width: 185px;
-    /*Tamaño 300x300*/
-    height: 40px;
-    /*Tamaño 300x300*/
-    transform: translate(135px, -340px);
-    display: flex;
-    /*Flex para que se ajuste*/
-    justify-content: center;
-    align-items: center;
-    border-radius: 1vh;
-    /*El borde al 50% que hace que se vuelva el cuadrado un círculo*/
-    font-family: monospace;
-    /*Hace que se de un poco más de separación entre los número*/
-    font-size: 1.5rem;
-    transition-duration: 1s;
-    color: rgb(17, 216, 173);
-}
+
 
 .reloj1:hover {
     background-color: #ffffff00;
@@ -170,4 +162,5 @@ body {
     border: 2px solid #DEE2EB;
     color: white;
 }
+
 
