@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/Proyecto_4/img/reloj-de-arena-black-widow.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-color: rgb(20, 20, 20);
+}
+
+.reloj {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Proyecto_4/img/reloj_analogo.png");
+    background-size: cover;
+    border: 1rem solid #A62D4D;
+    border-radius: 50vh;
+
+    transition-duration: 2s;
+    box-shadow: inset 0px 0px 20px 5px rgb(100, 138, 206);
+    /*1er parámetro crea sombra del eje x del plano cartesiano hrzntl. 2do parámetro marca el eje respecto al eje vertical. 3er Maneja la difuminación de la sombra. 4to Pone la sombra de forma pareja en toda la circunferencia*/
+}
+
+
+.reloj1 {
+    border: 0.3rem solid #fff;/*Borde del tamaño de 1rem*/
+    margin-top: -190px;
+    display: flex;/*Flex para que se ajuste*/
+    border-radius: 1vh;/*El borde al 50% que hace que se vuelva el cuadrado un círculo*/
+    font-family: monospace;/*Hace que se de un poco más de separación entre los número*/
+    font-size: 1.5rem;
+    transition-duration: 1s;
+    color: rgb(17, 216, 173);
+}
+
+.reloj:hover {
+    background-color: #ffffff00;
+    /* Color de fondo al pasar el ratón */
+    border: 1rem solid #6D129D;
+    color: rgb(9, 255, 0);
+}
+
+.reloj::before {/*La clase before ayuda a crear contenido interno*/
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #1100ff;
+    border-radius: 50vh;
+    z-index: 10000;    /*Indica el orden de un elemento posicionado y sus descendientes*/
+}
+
+.hora {
+    width: 140px;
+    height: 140px;
+}
+
+.minuto {
+    width: 220px;
+    height: 220px;
+}
+
+.segundo {
+    width: 250px;
+    height: 250px;
+}
+
+.botton{
+    margin-top: -180px;
+    margin-left: 90px;
+}
+
+.hora::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 90px;
+    background: #5B9BFA;
+    z-index: 10;
+    border-radius: 50vh;
+}
+
+.minuto::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 130px;
+    background: #2350e6;
+    z-index: 11;
+    border-radius: 50vh;
+}
+
+.segundo::before {
+    content: '';
+    position: absolute;
+    width: 1.8px;
+    height: 150px;
+    background: #6285e4;
+    z-index: 12;
+    border-radius: 50vh;
+}
+
+.hora,
+.minuto,
+.segundo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50vh;
+}
+
+
+/*Reloj digital*/
+
+body {
+    margin: 0;
+    min-height: 100vh;    /*Ajuste de 100% de la altura de la pantalla*/
+    display: grid;
+    /*Se justifica de una forma más sencilla*/
+    justify-content: center;    /*Ajuste de contenido vertical al centro*/
+    align-items: center;/*Ajuste de contenido horizontal al centro*/
+    background-color: rgb(26, 34, 32);    /*Color de fondo*/
+}
+
+
+
+.reloj1:hover {
+    background-color: #ffffff00;
+    /* Color de fondo al pasar el ratón */
+    border: 0.3rem solid #6D129D;
+    color: #FF9787;
+}
+
+.buttonFormat {
+    background-color: #7C0C18;/*Color de fondo del boton*/
+    border: 2px solid #ffffff;/*Borde del reloj1 solido y con color*/
+    color: rgb(255, 255, 255);/*Color del texto*/
+    padding: 15px 32px;/*Espacio interno*/
+    text-align: center;/*Alinea el texto*/
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;/* Tamaño de fuente */
+    margin: 4px 10px;/*Márgenes del botón*/
+    margin-top: -85px;
+    transition-duration: 1.5s;
+    cursor: pointer;/*Se habilita el cursos al pasar el mouse*/
+    border-radius: 12px;/*Redondea el borde*/
+}
+
+.buttonFormat:hover {
+    background-color: #ffffff00;/* Color de fondo al pasar el ratón */
+    border: 2px solid #DEE2EB;
+    color: white;
+}
+
