@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(34, 31, 32);
+    background-image: url("../img/navidad_santa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.puntaje {
+    margin-top: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    background-color: #041133;
+    width: 55px;
+    height: 51px;
+    cursor: pointer;
+    -webkit-mask-image: url("../img/estrella.svg"); /*Permiten que lo que tengo dibujado 50x50 tome la forma del svg, svg es un vector y no tiene colores ni fondos, solos parametros de su forma*/
+    mask-image: url("../img/estrella.svg"); /*Lo que le decimos es que haga una máscara dentro de .item y toma la forma ese vector*/
+}
+
+.item.selec { /*Se crea la clase adicional para el color de fondo de las estrellas*/
+    background-color: #1978B2;
+}
