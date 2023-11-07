@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #dd2358;
+    background: #231d4d;
 }
 
 .pantalla {
@@ -20,13 +20,13 @@ body {
 
 .pantalla .cronometro {
     height: auto;
-    background: #e39cb0;
+    background: #e39cb021;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 2rem;
     box-shadow: 2rem;
-    box-shadow: 0px 0px 8px 5px #e6aebe;
+    box-shadow: 0px 0px 8px 5px #72e9cd;
     border: none;
 }
 
@@ -36,7 +36,7 @@ body {
     text-align: center;
     font-size: 45px;
     font-weight: 550;
-    color: rgb(11, 118, 134);
+    color: rgb(69, 151, 163);
 }
 
 .cronometro span.separador {
@@ -68,7 +68,7 @@ body {
     font-weight: 500;
     border-radius: 0.9rem;
     cursor: pointer;
-    box-shadow: 3px 4px 3px 0px #e883a0;
+    box-shadow: 3px 4px 3px 0px #83bbe8;
 }
 
 .botones button.on {
