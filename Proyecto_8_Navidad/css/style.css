@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{   
+    background-color: rgb(83, 200, 220);
+}
+
+.imagenOff{
+    width: 600px;
+    height: 500px;
+    background-image: url("../img/1.png");
+}
+
+.imagenOff.on{
+    background-image: url("../img/2.gif");
+}
+
+
+.sonidoOn{
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 80px;
+    color: red;
+    text-align: center;
+    background-color: #fff;
+}
+
+.sonidoOff{
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 80px;
+    color: red;
+    text-align: center;
+    background-color: #fff;
+
+
+}
+
+.contenedor{
+    display: flex;
+}
+
+.contenedor1{   
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor2{
+    
+    width: 50%;
+}
+.reloj{
+    margin: 3% 0;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor-dias,
+.contenedor-horas,
+.contenedor-minutos,
+.contenedor-segundos
+{
+    margin: 1% 3%;
+
+}
+
+.componentes{
+    padding: 20px 40px;
+    border: solid 1px #fff;
+    border-radius: 90px;
+    color: #fff;
+}
+
+
+.identificador{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.subContainer1{
+}
+
+.subContainer1 > #cuentaRegresiva{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(175, 4, 4);
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;   
+    gap: 20px;
+    border-radius: 80px;
+}
+
+
+
+.botones > .sonidoOn.red{
+    background-color: red;
+    color: white;
+    border: transparent;
+}
+
+
+.botones > .sonidoOn.red:hover{
+    background-color: rgb(255, 255, 255);
+    color: red;
+}
+
+.botones > .sonidoOff.red{
+    background-color: red;
+    color: white;
+    border: transparent;
+}
+
+
+.botones > .sonidoOff.red:hover{
+    background-color: rgb(255, 255, 255);
+    color: red;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+    <body>
+        
+    <div class="contenedor">
+
+        <div class="contenedor1">
+            
+            <div class="subContainer1">
+                
+                <div id="cuentaRegresiva"><span id="mensaje" >Faltan para navidad</span>
+                </div>
+                
+                    <div class="reloj">
+                        
+                        <div class="contenedor-dias">
+                            <div class="componentes" id="dias"></div>
+                            <div class="identificador">D</div>
+                        </div>
+                        <div class="contenedor-horas">
+                            <div class="componentes" id="horas"></div>
+                            <div class="identificador" >H</div>
+                        </div>
+                        <div class="contenedor-minutos">
+                            <div class="componentes" id="minutos"></div>
+                            <div class="identificador" >M</div>
+                        </div>
+                        <div class="contenedor-segundos">
+                            <div class="componentes" id="segundos"></div>
+                            <div class="identificador" >S</div>
+                        </div>
+                    </div>
+                
+                    
+                <div class="botones">
+                    <div class="sonidoOn" id="sonidoOn" onclick="empezar()">Play</div>
+                    <div class="sonidoOff" id="sonidoOff" onclick="detener()">Pause</div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="contenedor2">
+            <div id="imagenQuieta" class="imagenOff">
+            </div>
+        </div>
+
+    </div>
+        
+    <script src="./script.js"></script>
+</body>
+</html>
