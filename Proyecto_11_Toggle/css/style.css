@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/img/manana-montanas.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: 0.5s;
+
+    &.toggleNoche{
+        background-image: url('/img/colinas-en-paisaje-nocturno.jpg');
+        background-size: cover;
+    }
+}
+
+
+#toggle {
+    height: 160px;
+    width: 320px;
+    background: rgb(116, 115, 107);
+    box-shadow: inset 0 8px 60px rgba(204, 176, 16, 0.1), /*3 sombras internas tipo inset*/
+                inset 0 8px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    appearance: none;
+    border-radius: 160px;
+
+    &.toggleNoche{
+        background-color: rgb(61, 65, 65);
+        box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+        inset 0 2px 8px rgba(0, 0, 0, 0.1),
+        inset 0 -4px 4px rgba(0, 0, 0, 0.05);
+        
+        .circulo {
+            left: 160px;
+            background-image: url('/img/media-luna.png');
+            background-size: cover;
+        }
+    }
+}
+
+.circulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 160px;
+    content: "";
+    background-image: url('/img/dom.png');
+    background-size: cover;
+    border-radius: 50vh;
+    transform: scale(0.9);
+    transition: 0.5s;
+    box-shadow: 0 8px 40px rgba(238, 255, 0, 0.5),
+        inset 4px 4px rgba(194, 228, 1, 0.2),
+        inset -4px 4px rgba(185, 235, 4, 0.2);
+}
