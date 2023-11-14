@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(83, 200, 220);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.papaNoelOff {
+    width: 440px;
+    height: 440px;
+    border-radius: 1vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: url("../img/papaNoel.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.papaNoelOff.on {
+    background-image: url("../img/papaNoel.gif");
+    background-position-y: -40px;
+}
+
+.play {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    border-radius: 1vh;
+    position: fixed;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pause {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    border-radius: 1vh;
+    position: fixed;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
