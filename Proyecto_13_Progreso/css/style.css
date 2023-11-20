@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(32, 31, 31);
+}
+
+.barra {
+    background-color: #383838;
+    height: 45px;
+    width: 50%;
+    margin: 130px auto;
+    box-shadow: inset 6px 6px 12px #303030,
+        inset -6px -6px 12px #404040;
+    overflow: hidden;
+    border: none;
+    border-radius: 20rem;
+}
+
+.progreso {
+    height: 100%;
+    width: 0;
+    background-color: rgb(19, 113, 255);
+    box-shadow: 0 0 10px rgb(19, 71, 113),
+        0 0 20px rgb(19, 71, 76);
+    display: block;
+    border-radius: 20rem;
+}
+
+.porcentaje {
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(100px);
+    color: rgb(255, 62, 62);
+}
+
+body.celebracion {
+    background-image: url(../img/celebracionMessi.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
