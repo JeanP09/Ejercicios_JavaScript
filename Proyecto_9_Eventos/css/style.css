@@ -10,7 +10,7 @@ body {
 
 .formulario {
     box-shadow: 3px 3px 20px rgb(53, 137, 211);
-    margin-top: 25px;
+    margin-top: 30px;
     background-color: rgb(255, 255, 255);
     width: 348px;
     height: 146px;
@@ -27,6 +27,11 @@ form {
 h1 {
     margin-top: 15px;
     color: white;
+}
+
+.imgEvent {
+    width: 50px;
+    margin-bottom: -15px;
 }
 
 input {
@@ -55,6 +60,7 @@ input {
     border-radius: 1vh;
     border: beige;
     border-color: rgb(70, 70, 150);
+    cursor: pointer;
 }
 
 .evento {
@@ -95,7 +101,12 @@ input {
 .diasFaltantes {
     font-size: 30px;
     color: rgb(8, 160, 84);
+}
 
+.nombreEvento{
+    word-break: break-all;
+    overflow-wrap: break-word;
+    width: 18ch;
 }
 
 .nombreEvento1 {
@@ -121,4 +132,11 @@ input {
 .eliminar:hover {
     background-color: red;
     cursor: pointer;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 100px;
 }
