@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 162, 255);
+}
+
+.formulario {
+    box-shadow: 3px 3px 20px rgb(53, 137, 211);
+    margin-top: 25px;
+    background-color: rgb(255, 255, 255);
+    width: 348px;
+    height: 146px;
+    border-radius: 1vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+form {
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    margin-top: 15px;
+    color: white;
+}
+
+input {
+    width: 160px;
+    margin: 4px;
+    border-radius: 1vh;
+}
+
+#nombreEvento, #fechaEvento {
+    width: 300px;
+    height: 30px;
+    border-color: blue;
+}
+
+.texto {
+    color: black;
+    
+}
+
+#agregar {
+    height: 40px;
+    width: 300px;
+    box-shadow: 0px 14px 24px aliceblue;
+    background-color: rgb(0, 174, 255);
+    color: rgb(245, 233, 233);
+    border-radius: 1vh;
+    border: beige;
+    border-color: rgb(70, 70, 150);
+}
+
+.evento {
+    border: 2.5px solid rgb(0, 174, 255);
+    margin: 15px;
+    padding: 10px 0px 10px 10px;
+    border-radius: 1rem;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.listaEventos2 {
+    padding: 10px 5px;
+    background-color: aliceblue;
+    width: 670px;
+    border-radius: 1rem;
+
+}
+
+.space {
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    width: 600px;
+    border-radius: 2vh;
+    box-shadow: 3px 3px 20px rgb(53, 137, 211);
+}
+
+.dias {
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.diasFaltantes {
+    font-size: 30px;
+    color: rgb(8, 160, 84);
+
+}
+
+.nombreEvento1 {
+    font-size: 30px;
+    color: aliceblue;
+    overflow-x: auto;
+}
+
+.nombreEvento2 {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.eliminar {
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color: greenyellow;
+    border-radius: 1rem;
+    transition: all 0.5s;
+}
+
+.eliminar:hover {
+    background-color: red;
+    cursor: pointer;
+}
